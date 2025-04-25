@@ -1,0 +1,11 @@
+content.txt
+Class and object 
+class has data/attributes and function/method
+   > code walkthrough
+   > attributes get called itself , method are called manually
+Why python is called oop programming #Everthing in python is object(data structure and data type)
+Advantage of OOPs concepts
+  > You can create your own datatype
+  > code reusability
+  > debugging
+  > easy to collab 
