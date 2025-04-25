@@ -9,3 +9,7 @@ Advantage of OOPs concepts
   > code reusability
   > debugging
   > easy to collab 
+End to end we build small project(chatbook class)
+  > encapsulation
+  > debugging
+  > easy to colab
