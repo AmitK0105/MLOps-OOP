@@ -2,6 +2,7 @@
 class employee:
     #special function/special method/ dunder method- constructer 
     def __init__(self):
+        print(id(self))
         print("Started executed attributes or data")
         self.id=123
         self.salary= 50000
@@ -17,4 +18,6 @@ sam= employee()
 #print(sam.salary)
 #sam.travel("kerala")
 print(type(sam))
-
+print(id(sam))
+sam.name= "Sam Kumar" # We can create the functionality outside of the class as well 
+print(sam.name)

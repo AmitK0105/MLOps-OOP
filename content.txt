@@ -10,6 +10,11 @@ Advantage of OOPs concepts
   > debugging
   > easy to collab 
 End to end we build small project(chatbook class)
+  > Function vs Method
+  > Magic method/ dunder method
+  > self
   > encapsulation
   > debugging
   > easy to colab
+  > getter & setter
+  > static method
