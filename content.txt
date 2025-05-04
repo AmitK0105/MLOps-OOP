@@ -18,3 +18,12 @@ End to end we build small project(chatbook class)
   > easy to colab
   > getter & setter
   > static method
+
+Inheritance
+  >Inheritance code example
+  >why inheritance is needed ?(Code reusability, parent has no access to child class)
+  >what gets inherited ?
+  >cosntructor overlaoding & method overlaoding
+  >super keyword(can be use only inside the class, can not access variables/attributes, used only inside child class)
+
+  >Types of Inheritance 1. Single Inheritance 2. Multilevel 3. Hierarchical 4. Multiple Diamond problem 5. Hybrid
