@@ -77,31 +77,70 @@
 
 #Multiple inheritance & Diamond Problem
 
-class A:
+# class A:
+#     def __init__(self, name):
+#         self.name= name
+
+#     def greet(self):
+#         print("Hello from A", self.name)
+
+# class B(A):
+#     def greet(self):
+#         print("Hello from B", self.name)
+#         super().greet()
+
+# class C(A):
+#     def greet(self):
+#         print("Hello from c", self.name)
+#         super().greet()
+
+# #Derived class
+
+# class D(B,C):
+#     def greet(self):
+#         print("Hello from D", self.name)
+#         super().greet()
+
+# #create an instance of D
+
+# di= D("Track")
+# di.greet()
+
+#------------------------------------------------------------------------
+
+#Hybrid Inheritance
+
+class Animal:
     def __init__(self, name):
         self.name= name
+    def sound(self):
+        print(self.name, "make the sound")
 
-    def greet(self):
-        print("Hello from A", self.name)
+#intermediate class
+class cattle(Animal):
+    def feed(self):
+        print(self.name, "is feeding milk")
+#intermediate class
 
-class B(A):
-    def greet(self):
-        print("Hello from B", self.name)
-        super().greet()
+class Bird(Animal):
+    def fly(self):
+        print(self.name, "is flying")
 
-class C(A):
-    def greet(self):
-        print("Hello from c", self.name)
-        super().greet()
+#Derived class(multiple inheritance)
 
-#Derived class
+class Ostrich(cattle, Bird):
+    def __init__(self, name):
+        cattle.__init__(self, name) #explicitly calling the constructor
 
-class D(B,C):
-    def greet(self):
-        print("Hello from D", self.name)
-        super().greet()
+    def nocturnal(self):
+        print(self.name, "is noctrurnal")
 
-#create an instance of D
 
-di= D("Track")
-di.greet()
+
+#create an instance of Ostrich
+
+ost= Ostrich("Bruce")
+ost.sound()
+ost.feed()
+ost.fly()
+ost.nocturnal()
